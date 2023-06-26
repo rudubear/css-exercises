@@ -1,0 +1,25 @@
+* {
+    font-size: 18px;
+    font-family: 'Dejavu Sans'
+}
+
+.pinko {
+    background-color: rgb(240,125,148);
+    font-family: Verdana, 'Dejavu Sans', sans-serif;
+}
+
+.pinko.cooler{
+    font-size: 24px;
+
+}
+
+#two {
+    color: rgb(0,0,255);
+    font-size: 36px;
+}
+
+#four {
+    background-color: rgb(96,252,117);
+    font-size: 24px;
+    font-weight: bold;
+}
