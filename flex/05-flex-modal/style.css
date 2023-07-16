@@ -82,6 +82,7 @@ button.cancel {
 .header-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header{
