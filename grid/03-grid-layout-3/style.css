@@ -46,6 +46,8 @@
 
 .nav {
   background-color: #C50208;
+
+  display: grid;
 }
 
 .nav ul li {
@@ -83,9 +85,48 @@
 
 .footer {
   background-color: #393f4d;
+
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+}
+
+/*my solution*/
+.container {
+  display: grid;
+  gap:10px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 0.5fr  5fr 1fr;
+}
+
+
+.header {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+.sidebar {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.nav {
+  display: grid;
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+.article {
+  display: grid;
+  grid-column: 2 / -1;
+  grid-row: 3 / 4;
+}
+
+.footer {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
 }
