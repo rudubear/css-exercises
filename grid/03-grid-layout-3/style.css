@@ -98,7 +98,7 @@
   display: grid;
   gap: 4px;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 0.5fr  5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr  5fr 0.5fr;
 }
 
 
@@ -112,8 +112,7 @@
   display: grid;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  gap: 5px;
-  row-gap: 10px;
+  gap: 50px;
 }
 
 .nav {
@@ -153,3 +152,17 @@
   list-style-type: none;
 }
 
+.sidebar > .photo, .sidebar > .side-content {
+  display: grid;
+  align-items: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  display: grid;
+}
+
+* {
+  box-sizing: border-box;
+}
