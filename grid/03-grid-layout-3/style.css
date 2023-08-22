@@ -96,7 +96,7 @@
 /*my solution*/
 .container {
   display: grid;
-  gap:10px;
+  gap: 4px;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 0.5fr  5fr 1fr;
 }
@@ -105,12 +105,15 @@
 .header {
   display: grid;
   grid-column: 1 / -1;
+  grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
   display: grid;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
+  gap: 5px;
+  row-gap: 10px;
 }
 
 .nav {
@@ -123,6 +126,13 @@
   display: grid;
   grid-column: 2 / -1;
   grid-row: 3 / 4;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+}
+
+.card {
+  height: 200px;
 }
 
 .footer {
@@ -130,3 +140,16 @@
   grid-column: 1 / -1;
   grid-row: 4 / 5;
 }
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
