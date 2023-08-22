@@ -119,6 +119,7 @@
   display: grid;
   grid-column: 2 / -1;
   grid-row: 2 / 3;
+  align-items: center;
 }
 
 .article {
@@ -131,7 +132,7 @@
 }
 
 .card {
-  height: 200px;
+  height: min(200px, 1fr);
 }
 
 .footer {
